@@ -9,8 +9,8 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: 10.138.77.82
+        host: 10.138.77.38
         username: tcs
         password: ${{ secrets.MY_SECRET }}
         port: 22
-        script: whoami
+        script: git status
