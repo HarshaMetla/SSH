@@ -11,6 +11,6 @@ jobs:
       with:
         host: 10.138.77.82
         username: tcs
-        password: ${{ secrets.MY}}
+        password: ${{ secrets.MY_SECRET }}
         port: 22
         script: whoami
