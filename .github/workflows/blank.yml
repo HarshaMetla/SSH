@@ -13,4 +13,4 @@ jobs:
         username: harshametla
         password: ${{ secrets.MY_SECRET }}
         port: 22
-        script: whomai
+        script: whoami
