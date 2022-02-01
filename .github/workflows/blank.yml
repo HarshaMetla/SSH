@@ -6,17 +6,17 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
-      with:
-        host: 10.138.77.176
-        username: harshametla
-        password: ${{ secrets.MY_SECRET }}
-        port: 22
-        script: whoami
+    #- name: executing remote ssh commands using password
+     # uses: appleboy/ssh-action@master
+     # with:
+     #   host: 10.138.77.176
+     #   username: harshametla
+       # password: ${{ secrets.MY_SECRET }}
+      #  port: 22
+       # script: whoami
     - name: Execute SSH commmands on remote server
       uses: JimCronqvist/action-ssh@master
       with:
-            hosts: 'user@domain.com'
-            privateKey: ${{ secrets.PRIVATE_KEY }}
+            hosts: 'harshametla@10.138.77.176'
+            privateKey: ${{ secrets.MY_SECRET }}
             command: ls -lah
