@@ -17,6 +17,7 @@ jobs:
     - name: Execute SSH commmands on remote server
       uses: JimCronqvist/action-ssh@master
       with:
-            hosts: 'harshametla@10.138.77.176'
+            host: 10.138.77.176
+            username: harshametla
             privateKey: ${{ secrets.MY_SECRET }}
             command: ls -lah
