@@ -20,4 +20,4 @@ jobs:
             host: 10.138.77.176
             username: harshametla
             privateKey: ${{ secrets.MY_SECRET }}
-            command: ls -lah
+            command: whoami
